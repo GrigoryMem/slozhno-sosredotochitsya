@@ -1,5 +1,169 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  
+  font-family: "IBM Plex Mono",sans-serif;
+  font-size: calc(var(--font-size) * 1px);
+  font-weight: 400;
+  line-height: calc( var(--line-height) / var(--font-size));
+  background-color: var(--background-page);
+  background-attachment: fixed;
+  background-image: url('../images/cover-image-dark.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  color:var(--text-color);
+  max-inline-size: 1024px;
+ 
+   
+
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+/* Что делать, когда не можешь делать ничего Или почему нам так сложно сконцентрироваться, особенно когда очень надо */
+
+/* header */
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows:1fr min-content 1fr;
+
+  block-size: max(668px,100vh);
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-right: 20px;
+ }
+
+ .header:before,.header:after {
+  content: "";
+  position: absolute;
+  border-inline-end:1px solid var(--accent-color);
+  border-block-start:1px solid var(--accent-color);
+  display: block;
+  inline-size: 25px;
+  aspect-ratio: 1;
+ }
+ .header:before {
+  inset-inline-end: 20px;
+  inset-block-start: 20px;
+}
+
+ .header:after {
+  rotate:180deg;
+  inset-inline-start: 20px;
+  inset-block-end: 20px;
+ }
+
+.decorated-zone {
+}
+
+.header__theme-menu {
+  justify-self: center;
+  padding-left: 20px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap:10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.header__theme-menu-item {
+ 
+}
+
+.header__theme-menu-button {
+font-family: 'IBM Plex Mono',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 1;
+text-align: center;
+
+
+  text-transform: lowercase;
+  padding: 3px 13px;
+color: var(--accent-color);
+border:1px solid  var(--accent-color);
+}
+
+.header__theme-menu-button_type_light {
+}
+.header__theme-menu-button_active {
+}
+.header__theme-menu-button_type_auto {
+}
+.header__theme-menu-button_type_dark {
+}
+
+
+
+.decorated-zone {
+}
+
+
+.header__decor-elem {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  
+  inset-block-start:20px;
+  text-transform: uppercase;
+  inset-inline-end: 40px;
+  color:var(--accent-color);
+  max-width: 52px;
+  /* padding-block-start:2px; */
+  text-align: center;
+  line-height: 1.38;
+
+  
+}
+
+.header__decor-elem:after {
+  position: relative;
+  left:9px;
+  content:"";
+  display: block;
+  font-size: 0;
+  inline-size: 9px;
+  block-size: 9px; 
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+
+.header__title {
+font-family: 'IBM Plex Mono',sans-serif;
+font-weight: 700;
+font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+line-height: 0.82;
+color: var(--heading-color);
+text-shadow: 4px 4px 0 var(--accent-color);
+justify-self: start;
+}
+
+.header__paragraph {
+
+  width:min(50%, 491px);
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--background-page);
+  background-color: var(--accent-color);
+  align-self:center;
+  justify-self: end;
+  line-height: 1.3;
+
+ 
+}
+
+
+
+
+
+
+
