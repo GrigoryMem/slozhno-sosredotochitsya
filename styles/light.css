@@ -4,11 +4,9 @@
   переключая тему
 */
 :root.theme_light {
-  --background-page:#FFF1F7;
-  --accent-color: #FF0070;
-  --heading-color: #FFC2E6;
- 
-
+  --background-page: #fff1f7;
+  --accent-color: #ff0070;
+  --heading-color: #ffc2e6;
 }
 
 .page.theme_light {
@@ -18,16 +16,11 @@
   */
 }
 
-.page.theme_light 
-
-
-.page.theme_light .header__theme-menu-button {
-  
+.page.theme_light .page.theme_light .header__theme-menu-button {
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {
-        /* Дублируем переменные светлой темы */    
-    }
+    /* Дублируем переменные светлой темы */
+  }
 }
