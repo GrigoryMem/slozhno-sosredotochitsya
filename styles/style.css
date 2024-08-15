@@ -13,6 +13,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  max-width: 1024px;
 }
 /* Что делать, когда не можешь делать ничего Или почему нам так сложно сконцентрироваться, особенно когда очень надо */
 
