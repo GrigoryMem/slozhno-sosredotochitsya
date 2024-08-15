@@ -24,7 +24,7 @@
 /* header */
 
 .header {
-  position: relative;
+  
   display: grid;
   grid-template-rows:1fr min-content 1fr;
 
@@ -41,8 +41,12 @@
 
  }
 
+ .decorated-zone {
+  position: relative;
+}
 
- .header:before,.header:after {
+ 
+ .decorated-zone:before,.decorated-zone:after {
   content: "";
   position: absolute;
   border-inline-end:1px solid var(--accent-color);
@@ -52,12 +56,12 @@
   aspect-ratio: 1;
  }
 
- .header:before {
+ .decorated-zone:before {
   inset-inline-end: 20px;
   inset-block-start: 20px;
 }
 
- .header:after {
+.decorated-zone:after {
   rotate:180deg;
   inset-inline-start: 20px;
   inset-block-end: 20px;
@@ -65,20 +69,19 @@
 
  @media (width <=535px) {
 
-  .header:before {
+  .decorated-zone:before {
     inset-inline-end: 10px;
     inset-block-start: 10px;
   }
   
-   .header:after {
+  .decorated-zone:after {
  
     inset-inline-start: 10px;
     inset-block-end: 10px;
    }
  }
 
-.decorated-zone {
-}
+
 
 .header__theme-menu {
   
@@ -180,6 +183,7 @@ color: var(--accent-color);
 
 
 @media (width<=535px) {
+
   .header__decor-elem {
     inset-block-start:10px;
     inset-inline-end: 29px;
@@ -187,7 +191,7 @@ color: var(--accent-color);
 }
 
 
-.header__title {
+.title-main{
 font-family: 'IBM Plex Mono',sans-serif;
 font-weight: 700;
 font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -199,7 +203,7 @@ justify-self: start;
 
 @media (width<768px) {
 
-  .header__title {
+  .title-main {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
@@ -238,14 +242,14 @@ justify-self: start;
 
 
 .main {
-  padding-block: 60px 80px;
+  padding-block: 60px 45px;
 }
 
 
 @media (width<=535px) {
 
   .main {
-    padding-block: 40px 80px;
+    padding-block: 40px 35px;
   }
 }
 
@@ -341,7 +345,6 @@ justify-self: start;
   font-size: 18px;
   line-height: 1.3;
   color: var(--accent-color);
-
 }
 
 .desc__subtitle {
@@ -378,6 +381,7 @@ justify-self: start;
   "card-3 card-4 card-2"
   "card-3 card-5 card-5";
   gap: 20px;
+ 
 }
 
 
@@ -424,5 +428,32 @@ justify-self: start;
     flex-direction: column;
     gap:5px;
     }
+  }
+    /* footer */
 
-    
+    .footer {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 768px;
+    }
+
+
+@media  (width<=768px){
+
+  .footer {
+    min-height: 1024px;
+  }
+}
+
+
+@media  (width<=535px){
+  
+  .footer {
+    min-height: 668px;
+  }
+}
+
+
