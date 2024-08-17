@@ -11,6 +11,7 @@
   --text-color: #f1b2ce;
   --heading-color: #db00ff;
   --offset: 20px;
+  --main-height: max(668px, 100vh);
 
  
 }
