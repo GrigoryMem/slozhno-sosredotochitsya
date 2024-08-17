@@ -271,12 +271,11 @@
 /* footer */
 
 .footer {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-block-size: 768px;
+  block-size: max(668px, 100vh);
 }
 
 /* @media */
@@ -317,12 +316,6 @@
 
     .desc:nth-of-type(even) .desc__title {
     width: min(100%, 200px);
-  }
-
-  /* footer */
-
-   .footer {
-    min-block-size: 1024px;
   }
 }
 
@@ -375,10 +368,5 @@
     gap: 5px;
   }
 
-  /* footer */
-
-  .footer {
-    min-block-size: 668px;
-  }
 }
 
