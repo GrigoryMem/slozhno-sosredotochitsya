@@ -14,6 +14,7 @@
   background-size: cover;
   background-attachment: fixed;
   max-inline-size: 1024px;
+  
 }
 /* Что делать, когда не можешь делать ничего Или почему нам так сложно сконцентрироваться, особенно когда очень надо */
 
@@ -113,7 +114,9 @@
   text-transform: lowercase;
 }
 
-
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--accent-color);
+}
 
 .header__theme-menu-button:focus {
   outline: none;
@@ -309,7 +312,7 @@
 }
 
 @media (width <=535px) {
-  
+
   .desc__link {
     border-block-end: 1px solid currentColor;
   }
