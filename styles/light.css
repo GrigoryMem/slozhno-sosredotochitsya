@@ -47,8 +47,18 @@
   color: var(--text-color);
 }
 
+.theme_light.page .decorated-zone:before,
+.theme_light.page .decorated-zone:after {
+border-inline-end: 1px solid var(--text-color);
+border-block-start: 1px solid var(--text-color);
+}
+
 .theme_light.page .desc__title {
   color: var(--text-color);
+}
+
+.theme_light.page .header__decor-elem {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -63,13 +73,7 @@
     --heading-color: #FFC2E6;
   }
 
-  .page{
-    color: var(--text-color);
-    /* сохраните этот селектор в приведённом виде.
-      Так стили написанные ниже будут иметь больший вес,
-      чем стили в медиазапросе предпочтений пользователя
-    */
-   
+  .theme_auto.page{
     background: url(../images/cover-image-light.png) var(--background-page);
     background-repeat: no-repeat;
     background-position: center;
@@ -77,31 +81,41 @@
     background-attachment: fixed;
   }
   
- .header__theme-menu-button {
+  .theme_auto.page .header__theme-menu-button {
     
     color: var(--text-color);
     
     }
 
-    .header__theme-menu-button:hover {
+    .theme_auto.page .header__theme-menu-button:hover {
       outline: 1px solid var(--outline-color);
     }
   
-     .header__theme-menu-button_active {
+    .theme_auto.page  .header__theme-menu-button_active {
       outline: 1px solid var(--text-color);
       color: var(--text-color); 
     }
 
-    .header__theme-menu-button:focus-visible {
+    .theme_auto.page .header__theme-menu-button:focus-visible {
       border-bottom: 1px solid var(--text-color);
+    }
+
+    .theme_auto.page .header__decor-elem {
+      display: none;
     }
   
   
-  .title-decor {
+    .theme_auto.page .title-decor {
     color: var(--text-color);
   }
+
+  .theme_auto.page .decorated-zone:before,
+  .theme_auto.page .decorated-zone:after {
+  border-inline-end: 1px solid var(--text-color);
+  border-block-start: 1px solid var(--text-color);
+}
   
-.desc__title {
+  .theme_auto.page .desc__title {
     color: var(--text-color);
   }
   
