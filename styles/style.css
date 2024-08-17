@@ -1,7 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   color: var(--text-color);
   font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 400;
@@ -14,7 +13,6 @@
   background-attachment: fixed;
   max-inline-size: 1024px;
 }
-/* Что делать, когда не можешь делать ничего Или почему нам так сложно сконцентрироваться, особенно когда очень надо */
 
 /* header */
 
@@ -222,8 +220,6 @@
   outline: 1px solid currentColor;
 }
 
-
-
 /* gallery */
 
 .gallery__cards {
@@ -267,7 +263,6 @@
   grid-area: card-5;
 }
 
-
 /* footer */
 
 .footer {
@@ -281,7 +276,6 @@
 /* @media */
 
 @media screen and (orientation: portrait) {
-
   /* header */
 
   .header__theme-menu {
@@ -290,61 +284,58 @@
     align-self: center;
   }
 
-   .header__theme-menu-list {
+  .header__theme-menu-list {
     flex-direction: column;
   }
 }
 
-
 @media (width<=768px) {
 
-   .title-main {
+  .title-main {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   /* header */
 
-   .header__subtitle {
+  .header__subtitle {
     padding-inline-end: 50px;
   }
 
   /* desc */
 
-    .desc:nth-of-type(even) .desc__list {
+  .desc:nth-of-type(even) .desc__list {
     grid-template-columns: initial;
   }
 
-    .desc:nth-of-type(even) .desc__title {
+  .desc:nth-of-type(even) .desc__title {
     width: min(100%, 200px);
   }
 }
 
 @media (width <=535px) {
-
   /* header */
 
-   .header {
-   
+  .header {
     padding: var(--offset);
   }
 
-    .header__decor-elem {
+  .header__decor-elem {
     inset-inline-end: 29px;
   }
 
-   .header__subtitle {
+  .header__subtitle {
     width: 100%;
   }
 
   /* main */
 
-   .main {
+  .main {
     padding-block: 40px 35px;
   }
 
   /* desc */
 
-    .desc:nth-of-type(odd) {
+  .desc:nth-of-type(odd) {
     grid-template-columns: 1fr;
   }
 
@@ -352,21 +343,19 @@
     width: min(100%, 300px);
   }
 
-   .desc:not(:last-child) {
+  .desc:not(:last-child) {
     padding-bottom: 50px;
   }
 
-   .desc__link {
+  .desc__link {
     border-block-end: 1px solid currentColor;
   }
 
   /* gallery */
 
-   .gallery__cards {
+  .gallery__cards {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
-
 }
-

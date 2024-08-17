@@ -1,24 +1,12 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root .theme_light {
   --background-page: #fff1f7;
-  --accent-color: #FF8DCB;
+  --accent-color: #ff8dcb;
   --text-color: #353430;
-  --heading-color: #FFC2E6;
-  --outline-color: #32312D66;
-
-
+  --heading-color: #ffc2e6;
+  --outline-color: #32312d66;
 }
 
 .theme_light.page {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   background: url(../images/cover-image-light.png) var(--background-page);
   background-repeat: no-repeat;
   background-position: center;
@@ -30,27 +18,26 @@
   color: var(--text-color);
 }
 
-.theme_light.page  .header__theme-menu-button:hover {
-    outline: 1px solid var(--outline-color);
-  }
+.theme_light.page .header__theme-menu-button:hover {
+  outline: 1px solid var(--outline-color);
+}
 
-  .theme_light.page .header__theme-menu-button_active {
-    outline: 1px solid var(--text-color); 
-  }
+.theme_light.page .header__theme-menu-button_active {
+  outline: 1px solid var(--text-color);
+}
 
-  .theme_light.page  .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--text-color);
-  }
+.theme_light.page .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--text-color);
+}
 
-
-  .theme_light.page .title-decor {
+.theme_light.page .title-decor {
   color: var(--text-color);
 }
 
 .theme_light.page .decorated-zone:before,
 .theme_light.page .decorated-zone:after {
-border-inline-end: 1px solid var(--text-color);
-border-block-start: 1px solid var(--text-color);
+  border-inline-end: 1px solid var(--text-color);
+  border-block-start: 1px solid var(--text-color);
 }
 
 .theme_light.page .desc__title {
@@ -64,59 +51,53 @@ border-block-start: 1px solid var(--text-color);
 @media (prefers-color-scheme: light) {
 
   :root {
-
-    /* Дублируем переменные светлой темы */
     --background-page: #fff1f7;
-    --accent-color: #FF8DCB;
+    --accent-color: #ff8dcb;
     --text-color: #353430;
-    --outline-color: #32312D66;
-    --heading-color: #FFC2E6;
+    --outline-color: #32312d66;
+    --heading-color: #ffc2e6;
   }
 
-  .theme_auto.page{
+  .theme_auto.page {
     background: url(../images/cover-image-light.png) var(--background-page);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
   }
-  
+
   .theme_auto.page .header__theme-menu-button {
-    
     color: var(--text-color);
-    
-    }
+  }
 
-    .theme_auto.page .header__theme-menu-button:hover {
-      outline: 1px solid var(--outline-color);
-    }
-  
-    .theme_auto.page  .header__theme-menu-button_active {
-      outline: 1px solid var(--text-color);
-      color: var(--text-color); 
-    }
+  .theme_auto.page .header__theme-menu-button:hover {
+    outline: 1px solid var(--outline-color);
+  }
 
-    .theme_auto.page .header__theme-menu-button:focus-visible {
-      border-bottom: 1px solid var(--text-color);
-    }
+  .theme_auto.page .header__theme-menu-button_active {
+    outline: 1px solid var(--text-color);
+    color: var(--text-color);
+  }
 
-    .theme_auto.page .header__decor-elem {
-      display: none;
-    }
-  
-  
-    .theme_auto.page .title-decor {
+  .theme_auto.page .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--text-color);
+  }
+
+  .theme_auto.page .header__decor-elem {
+    display: none;
+  }
+
+  .theme_auto.page .title-decor {
     color: var(--text-color);
   }
 
   .theme_auto.page .decorated-zone:before,
   .theme_auto.page .decorated-zone:after {
-  border-inline-end: 1px solid var(--text-color);
-  border-block-start: 1px solid var(--text-color);
-}
-  
+    border-inline-end: 1px solid var(--text-color);
+    border-block-start: 1px solid var(--text-color);
+  }
+
   .theme_auto.page .desc__title {
     color: var(--text-color);
   }
-  
 }
