@@ -23,14 +23,13 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: var(--offset) var(--offset) var(--offset) 0;
-
   block-size: max(668px, 100vh);
 }
 
 @media (width <=535px) {
   
   .header {
-    --offset: 10px;
+   
     padding: var(--offset);
   }
 }
@@ -127,10 +126,7 @@
   text-transform: lowercase;
 }
 
-.header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color);
-  
-}
+
 
 .header__theme-menu-button:focus {
   outline: none;

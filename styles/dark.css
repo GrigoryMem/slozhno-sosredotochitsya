@@ -27,6 +27,9 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
+.theme_dark.page  .header__theme-menu-button {
+  color: var(--accent-color);
+}
 
 .theme_dark.page  .header__theme-menu-button:hover {
   outline: 1px solid var(--accent-color);
@@ -37,6 +40,7 @@
   outline: 1px solid var(--accent-color);
   pointer-events: none;
 }
+
 
 
 .theme_dark.page  .title-decor {

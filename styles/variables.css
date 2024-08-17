@@ -14,3 +14,11 @@
 
  
 }
+
+
+@media (width<=535px) {
+
+  :root {
+    --offset: 10px;
+  }
+}
