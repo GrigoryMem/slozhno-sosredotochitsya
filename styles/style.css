@@ -35,6 +35,16 @@
   }
 }
 
+.title-main {
+  justify-self: start;
+  color: var(--heading-color);
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 0.82;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
 .decorated-zone {
   position: relative;
 }
@@ -183,15 +193,7 @@
   }
 }
 
-.title-main {
-  justify-self: start;
-  color: var(--heading-color);
-  font-family: 'IBM Plex Mono', sans-serif;
-  font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  line-height: 0.82;
-  text-shadow: 4px 4px 0 var(--accent-color);
-}
+
 
 @media (width<=768px) {
   .title-main {

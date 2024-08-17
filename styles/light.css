@@ -13,7 +13,7 @@
 
 }
 
-.page.theme_light {
+.theme_light.page {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
@@ -25,29 +25,29 @@
  
 }
 
-.page.theme_light .header__theme-menu-button {
+.theme_light.page .header__theme-menu-button {
   
   color: var(--text-color);
   
   }
 
-  .page.theme_light .header__theme-menu-button_active {
+  .theme_light.page .header__theme-menu-button_active {
     color: var(--text-color);
     outline: 1px solid var(--text-color); 
   }
 
 
-.page.theme_light .title-decor {
+  .theme_light.page .title-decor {
   color: var(--text-color);
 }
 
-.page.theme_light .desc__title {
+.theme_light.page .desc__title {
   color: var(--text-color);
 }
 
 @media (prefers-color-scheme: light) {
 
-  :root{
+  :root {
 
     /* Дублируем переменные светлой темы */
     --background-page: #fff1f7;
@@ -68,19 +68,19 @@
    
   }
   
-  .page .header__theme-menu-button {
+ .header__theme-menu-button {
     
     color: var(--text-color);
     
     }
   
-    .page .header__theme-menu-button_active {
+     .header__theme-menu-button_active {
       color: var(--text-color);
       outline: 1px solid var(--text-color); 
     }
   
   
-  .page .title-decor {
+  .title-decor {
     color: var(--text-color);
   }
   
