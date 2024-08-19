@@ -286,15 +286,6 @@
   block-size: max(668px, 100vh);
 }
 
-.footer.decorated-zone:before
- {
-  inset-block-start: 25px;
-}
-
-.footer.decorated-zone:after
- {
-  inset-block-end: 35px;
-}
 
 /* @media */
 
