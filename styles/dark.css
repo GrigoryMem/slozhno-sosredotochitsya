@@ -7,95 +7,20 @@
 }
 
 .theme_dark.page {
-  background: url(../images/cover-image-dark.png) var(--background-page);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.theme_dark.page .title-main {
-  color: var(--heading-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
-}
-
-.theme_dark.page .header__theme-menu-button {
-  color: var(--accent-color);
-}
-
-.theme_dark.page .header__theme-menu-button:hover {
-  outline: 1px solid var(--hover-border);
-}
-
-.theme_dark.page .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.theme_dark.page .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
-  pointer-events: none;
-}
-
-.theme_dark.page .title-decor {
-  color: var(--background-page);
-}
-
-.decorated-zone:before,
-.decorated-zone:after {
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
-}
-
-.theme_dark.page .desc__title {
-  color: var(--accent-color);
+  background-image: url(../images/cover-image-dark.png);
 }
 
 @media (prefers-color-scheme: dark) {
 
-  :root {
-    --background-page: #000028;
-    --accent-color: #ff0070;
-    --text-color: #f1b2ce;
-    --heading-color: #db00ff;
-    --hover-border: rgba(255, 0, 112, 0.4);
+:root {
+  --background-page: #000028;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --heading-color: #db00ff;
+  --hover-border: rgba(255, 0, 112, 0.4);
   }
 
   .theme_auto.page {
     background: url(../images/cover-image-dark.png) var(--background-page);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  .theme_auto.page .header__theme-menu-button:hover {
-    outline: 1px solid var(--hover-border);
-  }
-
-  .theme_auto.page .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--accent-color);
-  }
-
-  .theme_auto.page .header__theme-menu-button_active {
-    outline: 1px solid var(--accent-color);
-    pointer-events: none;
-  }
-
-  .theme_auto.page .title-decor {
-    color: var(--background-page);
-  }
-
-  .theme_auto.page .decorated-zone:before,
-  .theme_auto.page .decorated-zone:after {
-    border-inline-end: 1px solid var(--accent-color);
-    border-block-start: 1px solid var(--accent-color);
-  }
-
-  .theme_auto.page .desc__title {
-    color: var(--accent-color);
-  }
-
-  .theme_auto.page .desc__link {
-    text-shadow: 2px 2px 0 var(--accent-color);
   }
 }

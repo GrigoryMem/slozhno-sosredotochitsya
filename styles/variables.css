@@ -5,6 +5,7 @@
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --heading-color: #db00ff;
+  --hover-border: rgba(255, 0, 112, 0.4);
   --offset: 20px;
   --main-height: max(668px, 100vh);
 }

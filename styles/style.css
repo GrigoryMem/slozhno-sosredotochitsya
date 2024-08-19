@@ -6,7 +6,8 @@
   font-weight: 400;
   font-size: calc(var(--font-size, 18px) * 1px);
   line-height: calc(var(--line-height) / var(--font-size));
-  background: url(../images/cover-image-dark.png) var(--background-page, #000028);
+  background-image: url(../images/cover-image-dark.png) var(--background-page, #000028);
+  background-color: var(--background-page);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -85,7 +86,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color, #ff0070);
+  outline: 1px solid var(--accent-color, var(--hover-border));
 }
 
 .header__theme-menu-button:focus {
