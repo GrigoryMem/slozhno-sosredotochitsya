@@ -3,6 +3,7 @@
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --heading-color: #db00ff;
+  --hover-border: rgba(255, 0, 112, 0.4);
 }
 
 .theme_dark.page {
@@ -23,7 +24,7 @@
 }
 
 .theme_dark.page .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--hover-border);
 }
 
 .theme_dark.page .header__theme-menu-button:focus-visible {
@@ -56,6 +57,7 @@
     --accent-color: #ff0070;
     --text-color: #f1b2ce;
     --heading-color: #db00ff;
+    --hover-border: rgba(255, 0, 112, 0.4);
   }
 
   .theme_auto.page {
@@ -67,7 +69,7 @@
   }
 
   .theme_auto.page .header__theme-menu-button:hover {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid var(--hover-border);
   }
 
   .theme_auto.page .header__theme-menu-button:focus-visible {
