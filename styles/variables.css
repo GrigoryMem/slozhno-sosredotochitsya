@@ -1,11 +1,15 @@
 :root {
-  --font-size: 18;
-  --line-height: 23.4;
   --background-page: #000028;
   --accent-color: #ff0070;
+  --nav-color:#ff0070;
   --text-color: #f1b2ce;
   --heading-color: #db00ff;
   --hover-border: rgba(255, 0, 112, 0.4);
+  --shadow-color:#ff0070;
+  --desc-title:#ff0070;
+  --desc-subtitle:var(--background-page);
+  --decor-zone:#ff0070;
+  --rec-color:var(--accent-color);
   --offset: 20px;
   --main-height: max(668px, 100vh);
 }
