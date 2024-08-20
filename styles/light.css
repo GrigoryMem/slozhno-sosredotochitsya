@@ -4,7 +4,7 @@
   --text-color: #353430;
   --heading-color: #ffc2e6;
   --hover-border: #32312d66;
-  --shadow-color:#FF8DCB;
+  --shadow-color:var(--accent-color);
   --nav-color:var(--text-color);
   --desc-title:var(--text-color);
   --desc-subtitle:var(--text-color);
@@ -24,7 +24,7 @@
   --text-color: #353430;
   --heading-color: #ffc2e6;
   --hover-border: #32312d66;
-  --shadow-color:#FF8DCB;
+  --shadow-color:var(--accent-color);
   --nav-color:var(--text-color);
   --desc-title:var(--text-color);
   --desc-subtitle:var(--text-color);

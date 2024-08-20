@@ -1,14 +1,14 @@
 :root .theme_dark {
   --background-page: #000028;
   --accent-color: #ff0070;
-  --nav-color:#ff0070;
+  --nav-color:var(--accent-color);
   --text-color: #f1b2ce;
   --heading-color: #db00ff;
   --hover-border: rgba(255, 0, 112, 0.4);
-  --shadow-color:#ff0070;
-  --desc-title:#ff0070;
+  --shadow-color:var(--accent-color);
+  --desc-title:var(--accent-color);
   --desc-subtitle:var(--background-page);
-  --decor-zone:#ff0070;
+  --decor-zone:var(--accent-color);
   --rec-color:var(--accent-color);
 }
 
@@ -21,18 +21,18 @@
 :root {
   --background-page: #000028;
   --accent-color: #ff0070;
-  --nav-color:#ff0070;
+  --nav-color:var(--accent-color);
   --text-color: #f1b2ce;
   --heading-color: #db00ff;
   --hover-border: rgba(255, 0, 112, 0.4);
-  --shadow-color:#ff0070;
-  --desc-title:#ff0070;
+  --shadow-color:var(--accent-color);
+  --desc-title:var(--accent-color);
   --desc-subtitle:var(--background-page);
-  --decor-zone:#ff0070;
+  --decor-zone:var(--accent-color);
   --rec-color:var(--accent-color);
-  }
+}
 
-  .theme_auto.page {
-    background-image: url(../images/cover-image-dark.png);
-  }
+.theme_auto.page {
+  background-image: url(../images/cover-image-dark.png);
+}
 }
